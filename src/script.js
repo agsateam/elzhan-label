@@ -153,9 +153,13 @@ document.querySelectorAll(".detail-btn").forEach((button) => {
             const videoThumb = document.createElement("div");
 
             videoThumb.className =
-                "w-20 h-20 rounded-xl border cursor-pointer flex items-center justify-center bg-gray-200 text-2xl";
+                "w-20 h-20 rounded-xl border cursor-pointer overflow-hidden relative shrink-0 bg-gray-200";
 
-            videoThumb.innerHTML = "▶";
+            videoThumb.innerHTML = `
+    <div class="w-full h-full flex items-center justify-center text-3xl">
+        ▶
+    </div>
+`;
 
             videoThumb.onclick = () => {
                 mediaViewer.innerHTML = `

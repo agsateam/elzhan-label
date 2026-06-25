@@ -269,8 +269,9 @@
     </a>
 
     <!-- PRODUCT MODAL -->
-    <div id="productModal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[999]">
-        <div class="bg-white w-[95%] max-w-6xl rounded-3xl shadow-2xl relative overflow-hidden">
+    <div id="productModal" class="fixed inset-0 bg-black/60 hidden z-[999] overflow-y-auto p-4">
+        <div
+            class="bg-white w-[95%] max-w-6xl rounded-3xl shadow-2xl relative overflow-hidden mx-auto my-8 max-h-[95vh]">
             <!-- Close -->
             <button id="closeModal" class="absolute top-4 right-5 text-3xl font-bold z-50">
                 &times;
@@ -281,7 +282,7 @@
                 <!-- Left -->
                 <div class="p-6 bg-gray-100">
                     <div id="mediaViewer"
-                        class="w-full h-[500px] rounded-2xl bg-white flex items-center justify-center overflow-hidden">
+                        class="w-full h-[260px] md:h-[500px] rounded-2xl bg-white flex items-center justify-center overflow-hidden">
                         <img id="modalImage" src="" class="w-full h-full object-contain">
                     </div>
 
