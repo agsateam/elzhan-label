@@ -173,7 +173,7 @@ document.querySelectorAll(".detail-btn").forEach((button) => {
         }
 
         modal.classList.remove("hidden");
-        modal.classList.add("flex");
+        modal.classList.add("hidden");
     });
 });
 
