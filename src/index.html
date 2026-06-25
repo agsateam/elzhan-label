@@ -269,150 +269,152 @@
     </a>
 
     <!-- PRODUCT MODAL -->
-    <div id="productModal" class="fixed inset-0 bg-black/60 hidden z-[999] overflow-y-auto p-3 md:p-4">
-        <div class="bg-white w-[95%] max-w-6xl rounded-3xl shadow-2xl relative mx-auto my-8">
-            <!-- Close -->
-            <button id="closeModal" class="absolute top-4 right-5 text-3xl font-bold z-50">
-                &times;
-            </button>
+    <div id="productModal" class="fixed inset-0 hidden z-[999] bg-black/60">
 
-            <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="w-full h-full overflow-y-auto p-3 md:p-6">
+            <div class="bg-white w-[95%] max-w-6xl rounded-3xl shadow-2xl relative mx-auto my-4">
+                <!-- Close -->
+                <button id="closeModal" class="absolute top-4 right-5 text-3xl font-bold z-50">
+                    &times;
+                </button>
 
-                <!-- Left -->
-                <div class="p-6 bg-gray-100">
-                    <div id="mediaViewer"
-                        class="w-full h-[260px] md:h-[500px] rounded-2xl bg-white flex items-center justify-center overflow-hidden">
-                        <img id="modalImage" src="" class="w-full h-full object-contain">
-                    </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
 
-                    <div id="thumbnailContainer" class="flex gap-3 mt-4 overflow-auto">
-                    </div>
-                </div>
+                    <!-- Left -->
+                    <div class="p-6 bg-gray-100">
+                        <div id="mediaViewer"
+                            class="w-full h-[260px] md:h-[500px] rounded-2xl bg-white flex items-center justify-center overflow-hidden">
+                            <img id="modalImage" src="" class="w-full h-full object-contain">
+                        </div>
 
-                <!-- Right -->
-                <div class="p-5 md:p-8">
-                    <h2 id="modalTitle" class="text-4xl font-bold"></h2>
-
-                    <p id="modalPrice" class="mt-4 text-2xl font-semibold text-[#1E2A38]">
-                    </p>
-
-                    <p id="modalDescription" class="mt-6 text-gray-600 leading-relaxed">
-                    </p>
-
-                    <div class="mt-8">
-                        <h4 class="font-bold mb-3">Ukuran</h4>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">S</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">M</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">L</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">XL</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">XXL</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">XXXL</span>
-                            <span class="px-4 py-2 bg-gray-100 rounded-xl">XXXXL</span>
+                        <div id="thumbnailContainer" class="flex gap-3 mt-4 overflow-auto">
                         </div>
                     </div>
 
-                    <a id="waButton" href="#" target="_blank"
-                        class="inline-block mt-10 bg-green-500 text-white px-8 py-4 rounded-xl">
-                        Chat WhatsApp
-                    </a>
+                    <!-- Right -->
+                    <div class="p-5 md:p-8">
+                        <h2 id="modalTitle" class="text-4xl font-bold"></h2>
+
+                        <p id="modalPrice" class="mt-4 text-2xl font-semibold text-[#1E2A38]">
+                        </p>
+
+                        <p id="modalDescription" class="mt-6 text-gray-600 leading-relaxed">
+                        </p>
+
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-3">Ukuran</h4>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">S</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">M</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">L</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">XL</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">XXL</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">XXXL</span>
+                                <span class="px-4 py-2 bg-gray-100 rounded-xl">XXXXL</span>
+                            </div>
+                        </div>
+
+                        <a id="waButton" href="#" target="_blank"
+                            class="inline-block mt-10 bg-green-500 text-white px-8 py-4 rounded-xl">
+                            Chat WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer id="kontak" class="mt-24 bg-gradient-to-r from-[#162332] to-[#1E2A38] text-white">
-        <div class="max-w-7xl mx-auto px-6 py-16">
+        <footer id="kontak" class="mt-24 bg-gradient-to-r from-[#162332] to-[#1E2A38] text-white">
+            <div class="max-w-7xl mx-auto px-6 py-16">
 
-            <!-- Main Footer -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Main Footer -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-                <!-- Brand -->
-                <div class="lg:col-span-1">
-                    <div class="flex items-center gap-5 mb-6">
+                    <!-- Brand -->
+                    <div class="lg:col-span-1">
+                        <div class="flex items-center gap-5 mb-6">
 
-                        <div
-                            class="w-14 h-14 bg-white rounded-full flex items-center justify-center overflow-hidden shrink-0 shadow-lg">
-                            <img src="assets/logo/logo.png" class="w-full h-full object-cover" />
+                            <div
+                                class="w-14 h-14 bg-white rounded-full flex items-center justify-center overflow-hidden shrink-0 shadow-lg">
+                                <img src="assets/logo/logo.png" class="w-full h-full object-cover" />
+                            </div>
+
+                            <h2 class="text-3xl font-bold tracking-wide">
+                                Elzhan Label
+                            </h2>
                         </div>
 
-                        <h2 class="text-3xl font-bold tracking-wide">
-                            Elzhan Label
-                        </h2>
+                        <p class="text-gray-300 leading-8">
+                            Menyediakan seragam instansi premium dengan material terbaik,
+                            jahitan presisi, dan kualitas terpercaya untuk seluruh Indonesia.
+                        </p>
                     </div>
 
-                    <p class="text-gray-300 leading-8">
-                        Menyediakan seragam instansi premium dengan material terbaik,
-                        jahitan presisi, dan kualitas terpercaya untuk seluruh Indonesia.
+                    <!-- Navigasi -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Navigasi</h3>
+
+                        <ul class="space-y-4 text-gray-300">
+                            <li>
+                                <a href="#home" class="hover:text-white transition duration-300">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#tentang" class="hover:text-white transition duration-300">
+                                    Tentang Kami
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#produk" class="hover:text-white transition duration-300">
+                                    Produk
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Produk -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Produk</h3>
+
+                        <ul class="space-y-4 text-gray-300">
+                            <li>PDH Dinas</li>
+                            <li>PDH Kemenag</li>
+                            <li>PDH Pemda</li>
+                            <li>Batik Korpri</li>
+                            <li>PGRI / SD</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Hubungi Kami</h3>
+
+                        <div class="space-y-4 text-gray-300 leading-relaxed">
+                            <p>📱 +62 85185079209</p>
+                            <p>✉️ kingkidzwear@gmail.com</p>
+                            <p>📍 Jalan Desa Tosaran No. 119, RT.1/RW.3, Tosaran, Kedungwuni
+                                KAB. PEKALONGAN - KEDUNGWUNI
+                                JAWA TENGAH
+                                ID 51173</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="border-t border-white/10 mt-14 pt-6">
+                    <p class="text-center text-gray-400">
+                        © 2026 Elzhan Label — All Rights Reserved
                     </p>
                 </div>
 
-                <!-- Navigasi -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Navigasi</h3>
-
-                    <ul class="space-y-4 text-gray-300">
-                        <li>
-                            <a href="#home" class="hover:text-white transition duration-300">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#tentang" class="hover:text-white transition duration-300">
-                                Tentang Kami
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#produk" class="hover:text-white transition duration-300">
-                                Produk
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- Produk -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Produk</h3>
-
-                    <ul class="space-y-4 text-gray-300">
-                        <li>PDH Dinas</li>
-                        <li>PDH Kemenag</li>
-                        <li>PDH Pemda</li>
-                        <li>Batik Korpri</li>
-                        <li>PGRI / SD</li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Hubungi Kami</h3>
-
-                    <div class="space-y-4 text-gray-300 leading-relaxed">
-                        <p>📱 +62 85185079209</p>
-                        <p>✉️ kingkidzwear@gmail.com</p>
-                        <p>📍 Jalan Desa Tosaran No. 119, RT.1/RW.3, Tosaran, Kedungwuni
-                            KAB. PEKALONGAN - KEDUNGWUNI
-                            JAWA TENGAH
-                            ID 51173</p>
-                    </div>
-                </div>
             </div>
+        </footer>
 
-            <!-- Bottom Footer -->
-            <div class="border-t border-white/10 mt-14 pt-6">
-                <p class="text-center text-gray-400">
-                    © 2026 Elzhan Label — All Rights Reserved
-                </p>
-            </div>
-
-        </div>
-    </footer>
-
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
 
 </body>
 
