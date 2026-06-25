@@ -52,7 +52,7 @@ const products = {
         price: "Harga Mulai Rp 130.000",
         description:
             "Batik Korpri kerah hitam resmi dengan material berkualitas yang adem, nyaman, dan cocok digunakan untuk aktivitas kerja maupun acara formal. Dikerjakan dengan jahitan rapi dan presisi pada setiap detail untuk menghadirkan tampilan yang elegan, profesional, dan berkelas. Varian model tersedia lengkap meliputi pria tanpa lapis furing, pria lapis furing, wanita tanpa lapis furing, wanita lapis furing, serta blazer wanita. Untuk informasi ukuran, detail produk, maupun konsultasi pemesanan, silakan hubungi kami melalui WhatsApp agar kami dapat membantu merekomendasikan size yang paling sesuai.",
-        video: "../assets/products/korpri/korpri.mp4",
+        video: ["../assets/products/korpri/korpri.mp4"],
         images: [
             "../assets/products/korpri/korpri1.png",
             "../assets/products/korpri/korpri2.png",
@@ -136,14 +136,9 @@ document.querySelectorAll(".detail-btn").forEach((button) => {
                 "w-20 h-20 object-cover rounded-xl cursor-pointer border";
 
             thumb.onclick = () => {
-                thumb.onclick = () => {
-                    mediaViewer.innerHTML = `
-    <img
-      src="${image}"
-      class="w-full h-full object-contain"
-    >
-  `;
-                };
+                mediaViewer.innerHTML = `
+        <img src="${image}" class="w-full h-full object-contain">
+    `;
             };
 
             thumbnailContainer.appendChild(thumb);
@@ -173,17 +168,19 @@ document.querySelectorAll(".detail-btn").forEach((button) => {
         }
 
         modal.classList.remove("hidden");
-        modal.classList.add("hidden");
+        document.body.style.overflow = "hidden";
     });
 });
 
 closeModal.addEventListener("click", () => {
     modal.classList.add("hidden");
+    document.body.style.overflow = "auto";
 });
 
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.classList.add("hidden");
+        document.body.style.overflow = "auto";
     }
 });
 
